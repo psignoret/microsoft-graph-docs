@@ -11573,6 +11573,15 @@ items:
               href: api/authorizationpolicy-get.md
             - name: Update
               href: api/authorizationpolicy-update.md
+            - name: Default user role overrides
+              href: resources/defaultuserroleoverride.md
+              items:
+              - name: Get
+                href: api/defaultuserroleoverride-get.md
+              - name: List
+                href: api/authorizationpolicy-list-defaultuserroleoverrides.md
+              - name: Update
+                href: api/defaultuserroleoverride-update.md
           - name: B2C authentication methods policy
             href: resources/b2cauthenticationmethodspolicy.md
             items:

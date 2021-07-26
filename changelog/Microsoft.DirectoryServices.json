@@ -2,6 +2,40 @@
   "changelog": [
     {
       "ChangeList": [
+        {
+          "Id": "328b1e14-cab9-4100-b0fd-4293e89d5459",
+          "ApiChange": "Resource",
+          "ChangedApiName": "servicePrincipalCreationPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [servicePrincipalCreationPolicy](https://docs.microsoft.com/graph/api/resources/serviceprincipalcreationpolicy?view=graph-rest-beta&preserve-view=true) resource type. Service principal creation policies describe the conditions which must be met for the permission to create a service principal to be granted.",
+          "Target": "servicePrincipalCreationPolicy"
+        },
+        {
+          "Id": "441d0f19-6bcc-4349-a54e-b4b17fb3ef87",
+          "ApiChange": "Resource",
+          "ChangedApiName": "defaultUserRoleOverride",
+          "ChangeType": "Addition",
+          "Description": "Added the [defaultUserRoleOverride](https://docs.microsoft.com/graph/api/resources/defaultUserRoleOverride?view=graph-rest-beta&preserve-view=true) resource type. Default User role overrides are used to override the permissions included in the default User role.",
+          "Target": "authorizationPolicy"
+        },
+        {
+          "Id": "812ec5c0-d425-42c3-9e3a-4c3ad71bd50f",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "defaultUserRoleOverrides",
+          "ChangeType": "Addition",
+          "Description": "Added the **defaultUserRoleOverrides** navigation property to the [authorizationPolicy](https://docs.microsoft.com/en-us/graph/api/resources/authorizationpolicy?view=graph-rest-beta) resource.",
+          "Target": "authorizationPolicy"
+        }
+      ],
+      "Id": "b164ade0-2264-4565-ab39-9de09b3e1f1e",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-10-15T00:00:00.000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
 
        {
          "Id": "5ac1044f-93d1-4fe7-aa57-ce514720bf27",
