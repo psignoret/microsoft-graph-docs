@@ -11,6 +11,22 @@
           "Target": "servicePrincipalCreationPolicy"
         },
         {
+          "Id": "56f3491e-b458-40d5-99eb-fa01ebee8ec3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "servicePrincipalCreationConditionSet",
+          "ChangeType": "Addition",
+          "Description": "Added the [servicePrincipalCreationConditionSet](https://docs.microsoft.com/en-us/graph/api/resources/servicePrincipalCreationConditionSet?view=graph-rest-beta) resource",
+          "Target": "servicePrincipalCreationConditionSet"
+        },
+        {
+          "Id": "6750ff4e-6169-4a21-bef8-860f124aea09",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "servicePrincipalCreationPolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the **servicePrincipalCreationPolicies** relationship to the [policies](https://docs.microsoft.com/en-us/graph/api/resources/policy-overview?view=graph-rest-beta) singleton.",
+          "Target": "policies"
+        },
+        {
           "Id": "441d0f19-6bcc-4349-a54e-b4b17fb3ef87",
           "ApiChange": "Resource",
           "ChangedApiName": "defaultUserRoleOverride",
