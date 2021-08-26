@@ -1,19 +1,19 @@
 ---
-title: "List includes collection of servicePrincipalCreationPolicy"
-description: "Retrieve a list of the condition sets which describe conditions under which a service principal creation event is included in a service principal creation policy."
+title: "List servicePrincipalCreationPolicy includes"
+description: "Retrieve the condition sets that describe conditions which are included in the service principal creation policy."
 author: "psignoret"
 localization_priority: Normal
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# List includes collection of servicePrincipalCreationPolicy
+# List servicePrincipalCreationPolicy includes
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the condition sets which are *included* in a [servicePrincipalCreationPolicy](../resources/serviceprincipalcreationpolicy.md).
+Retrieve the condition sets that describe conditions which are *included* in a [servicePrincipalCreationPolicy](../resources/serviceprincipalcreationpolicy.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -35,7 +35,8 @@ GET /policies/servicePrincipalCreationPolicies/{servicePrincipalCreationPolicyId
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+This method supports the `$select` [OData query parameter](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Name|Description|
@@ -63,6 +64,9 @@ GET https://graph.microsoft.com/beta/policies/servicePrincipalCreationPolicies/{
 
 
 ### Response
+
+The following is an example of the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

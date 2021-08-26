@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of a [defaultUserRoleOverride](../resources/defaultuserroleoverride.md) object.
 
+A **defaultUserRoleOverride** object identifies a scenario and a list of directory [role permissions](/resources/unifiedrolepermission) applicable to that scenario. Role permissions can be added, updated, or removed to customize [users' default permissions](/azure/active-directory/fundamentals/users-default-permissions) in an organization, for the scenario in question. A **defaultUserRoleOverride** can also be reset to follow Microsoft's default setting.
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

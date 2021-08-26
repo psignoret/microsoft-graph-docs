@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Creates a [servicePrincipalCreationPolicy](../resources/serviceprincipalcreationpolicy.md). A service principal creation policy is used to describe the conditions under which a service principal may be created (for example, during application consent).
+Creates a [servicePrincipalCreationPolicy](../resources/serviceprincipalcreationpolicy.md) object. A service principal creation policy is used to describe the conditions under which a service principal may be created (for example, during application consent).
 
-After creating the service principal creation policy, you can [add include condition sets](serviceprincipalcreationpolicy-post-includes.md) to add matching rules, and [add exclude condition sets](serviceprincipalcreationpolicy-post-excludes.md) to add exclusion rules.
+After creating the service principal creation policy, you can [add include condition sets](serviceprincipalcreationpolicy-post-includes.md) to add matching rules, or [add exclude condition sets](serviceprincipalcreationpolicy-post-excludes.md) to add exclusion rules.
 
 ## Permissions
 
@@ -42,7 +42,14 @@ POST /policies/servicePrincipalCreationPolicies
 | Content-type | application/json. Required. |
 
 ## Request body
+
 In the request body, supply a JSON representation of the [servicePrincipalCreationPolicy](../resources/serviceprincipalcreationpolicy.md) object.
+
+|Property|Type|Description|
+|:---|:---|:---|
+| id | String | The unique identifier for the service principal creation policy. The **id** prefix `microsoft-` is reserved for built-in service principal creation policies, and may not be used in a custom service principal creation policy. Only letters, numbers, hyphens (`-`) and underscores (`_`) are allowed. Key. Not nullable. Required on create. Immutable.  Inherited from [policyBase](policyBase.md).|
+| displayName | String |The display name for the service principal creation policy.  Inherited from [policyBase](policyBase.md).|
+| description |String| The description for the service principal creation policy.  Inherited from [policyBase](policyBase.md).|
 
 ## Response
 
@@ -70,6 +77,7 @@ Content-Type: application/json
 
 
 ### Response
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -78,7 +86,7 @@ Content-Type: application/json
 } -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {

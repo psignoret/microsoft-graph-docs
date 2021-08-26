@@ -1,5 +1,5 @@
 ---
-title: "Delete servicePrincipalCreationConditionSet from excludes collection of servicePrincipalCreationPolicy"
+title: "Delete from servicePrincipalCreationPolicy excludes"
 description: "Deletes an excluded condition set from service principal creation policy."
 localization_priority: Normal
 doc_type: apiPageType
@@ -7,13 +7,14 @@ ms.prod: "identity-and-sign-in"
 author: "psignoret"
 ---
 
-# Delete servicePrincipalCreationConditionSet from excludes collection of servicePrincipalCreationPolicy
+# Delete from servicePrincipalCreationPolicy excludes
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a [servicePrincipalCreationConditionSet](../resources/serviceprincipalcreationconditionset.md) from the **excludes** collection of a [servicePrincipalCreationPolicy](../resources/serviceprincipalcreationpolicy.md).
+Deletes a [condition set](../resources/serviceprincipalcreationconditionset.md) from the **excludes** collection of a [servicePrincipalCreationPolicy](../resources/serviceprincipalcreationpolicy.md).
+
 
 ## Permissions
 
@@ -53,8 +54,6 @@ If successful, this method returns a `204 No Content` response code. It does not
 
 The following is an example of the request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "serviceprincipalcreationpolicy_delete_excludes"
@@ -63,8 +62,6 @@ The following is an example of the request.
 ```http
 DELETE https://graph.microsoft.com/beta/policies/servicePrincipalCreationPolicies/my-custom-sp-creation-policy/excludes/6a846635-3e70-4a10-821e-512a0db93cbd
 ```
----
-
 
 ### Response
 

@@ -1,18 +1,19 @@
 ---
-title: "Create servicePrincipalCreationConditionSet in includes collection of servicePrincipalCreationPolicy"
-description: "Create a new servicePrincipalCreationConditionSet object in the includes collection of a servicePrincipalCreationPolicy."
+title: "Create in servicePrincipalCreationPolicy includes"
+description: "Add conditions under which a service principal creation event is *included* in a service principal creation policy."
 author: "psignoret"
 localization_priority: Normal
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# Create servicePrincipalCreationConditionSet in includes collection of servicePrincipalCreationPolicy
+# Create in servicePrincipalCreationPolicy includes
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add conditions under which a service principal creation event is *included* in a service principal creation policy. You do this by adding a [servicePrincipalCreationConditionSet](../resources/serviceprincipalcreationconditionset.md) to the **includes** collection of a  [servicePrincipalCreationPolicy](../resources/servicePrincipalCreationPolicy.md).
+Add conditions under which a service principal creation event is *included* in a service principal creation policy. You do this by adding a [servicePrincipalCreationConditionSet](../resources/serviceprincipalcreationconditionset.md) object to the **includes** collection of a  [servicePrincipalCreationPolicy](../resources/servicePrincipalCreationPolicy.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

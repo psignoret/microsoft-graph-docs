@@ -28,7 +28,7 @@ A **defaultUserRoleOverride** objects allows some [default user permissions](/az
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The scenario identifier for this [defaultUserRoleOverride](../resources/defaultuserroleoverride.md). Allowed values: <ul><li>`ServicePrincipalLimitedCreate`: The limited permissions to create a [servicePrincipal](serviceprincipal.md) object, subject to a [servicePrincipalCreationPolicy](serviceprincipalcreationpolicy.md).</li></ul>|
-|isDefault|Boolean|Indicates whether the Microsoft default setting is in use. Set to `true` to remove overridden **rolePermissions** values and revert back to Microsoft's default setting. Set to `false` when overriding **rolePermissions* to customize [users default permissions](/azure/active-directory/fundamentals/users-default-permissions).|
+|isDefault|Boolean|Indicates whether the Microsoft default setting is in use. Set to `true` to remove overridden **rolePermissions** values and revert back to Microsoft's default setting. Set to `false` when overriding **rolePermissions* to customize [users' default permissions](/azure/active-directory/fundamentals/users-default-permissions).|
 |rolePermissions|[unifiedRolePermission](../resources/unifiedrolepermission.md) collection| The list of [role permissions](/resources/unifiedrolepermission) which indicate [users' default permissions](/azure/active-directory/fundamentals/users-default-permissions) in the organization, for the scenario identified by the **id** property. Adding, updating or removing items from  the **rolePermissions** collection can be used to customize the default user permissions for that scenario. |
 
 ## Relationships

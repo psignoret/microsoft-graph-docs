@@ -62,7 +62,7 @@ By default, if a user is allowed to grant consent to the permissions requested b
 
 #### Request
 
-The following request overrides the default User role to disable creating service principals.
+The following request overrides the default User role to remove users' default permission to create service principals.
 
 <!-- {
   "blockType": "request",
@@ -72,17 +72,14 @@ The following request overrides the default User role to disable creating servic
 ``` http
 PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy/defaultUserRoleOverrides/ServicePrincipalLimitedCreate
 Content-Type: application/json
-Content-length: 198
 
 {
-  "isDefault": "false",
+  "isDefault": false,
   "rolePermissions": [ ]
 }
 ```
 
 #### Response
-
->**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response"
@@ -94,7 +91,39 @@ HTTP/1.1 204 No Content
 
 ### Example 2: Restore default setting for service principal creation
 
-To restore the default setting for users' ability to create service principals, set **isDefault** to `true` on the `ServicePrincipalLimitedCreate` scenario, override the permissions for the `ServicePrincipalLimitedCreate` scenario to include the permission to create service principals subject to a custom [service principal creation policy](../resources/servicePrincipalCreationPolicy.md).
+To restore the default setting for users' ability to create service principals, set **isDefault** to `true` on the `ServicePrincipalLimitedCreate` scenario.
+
+#### Request
+
+The following reverts the overriden role permissions for the `ServicePrincipalLimitedCreate` scenario to follow Microsoft's default settings.
+
+<!-- {
+  "blockType": "request",
+  "name": "update_defaultuserroleoverride_restore_default"
+}
+-->
+``` http
+PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy/defaultUserRoleOverrides/ServicePrincipalLimitedCreate
+Content-Type: application/json
+
+{
+  "isDefault": true
+}
+```
+
+#### Response
+
+<!-- {
+  "blockType": "response"
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+### Example 3: Allow service principal creation with custom service principal creation policy
+
+To control under which conditions users can create a service principal (or cause a service principal to be created, such as by granting consent to an application), override the permissions for the `ServicePrincipalLimitedCreate` scenario to include the permission to create service principals subject to a custom [service principal creation policy](../resources/servicePrincipalCreationPolicy.md).
 
 #### Request
 
@@ -108,10 +137,9 @@ The following request overrides the default User role to allow creating service 
 ``` http
 PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy/defaultUserRoleOverrides/ServicePrincipalLimitedCreate
 Content-Type: application/json
-Content-length: 198
 
 {
-  "isDefault": "false",
+  "isDefault": false,
   "rolePermissions": [
     {
       "allowedResourceActions": [
@@ -123,43 +151,6 @@ Content-length: 198
 ```
 
 #### Response
-
->**Note:** The response object shown here might be shortened for readability.
-
-<!-- {
-  "blockType": "response"
-}
--->
-``` http
-HTTP/1.1 204 No Content
-```
-
-### Example 3: Allow service principal creation with custom service principal creation policy
-
-To control under which conditions users can create a service principal (or cause a service principal to be created, such as by granting consent to an application) .
-
-#### Request
-
-The following request overrides the default User role to disable creating service principals.
-
-<!-- {
-  "blockType": "request",
-  "name": "update_defaultuserroleoverride_restore_default"
-}
--->
-``` http
-PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy/defaultUserRoleOverrides/ServicePrincipalLimitedCreate
-Content-Type: application/json
-Content-length: 198
-
-{
-  "isDefault": "true"
-}
-```
-
-#### Response
-
->**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response"

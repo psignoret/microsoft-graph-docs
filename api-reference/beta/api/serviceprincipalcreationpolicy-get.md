@@ -60,12 +60,13 @@ If successful, this method returns a `200 OK` response code and a [servicePrinci
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/policies/servicePrincipalCreationPolicies/{servicePrincipalCreationPolicyId}
+GET https://graph.microsoft.com/beta/policies/servicePrincipalCreationPolicies/my-custom-sp-creation-policy
 ```
 
-
 ### Response
+
 >**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -77,14 +78,27 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.servicePrincipalCreationPolicy",
-    "id": "8e53ec67-ec67-8e53-67ec-538e67ec538e",
-    "deletedDateTime": "String (timestamp)",
-    "description": "String",
-    "displayName": "String",
-    "isBuiltIn": "Boolean"
-  }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/servicePrincipalCreationPolicies/$entity",
+    "id": "my-custom-sp-creation-policy",
+    "displayName": "Custom service principal creation policy",
+    "description": "A custom service principal creation policy to customize conditions for creating service principals.",
+    "isBuiltIn": false,
+    "includes": [
+        {
+            "id": "ad8087b5-fef8-425c-8c92-24c32ed5bdf1",
+            "applicationIds": [
+                "all"
+            ],
+            "applicationTenantIds": [
+                "all"
+            ],
+            "applicationPublisherIds": [
+                "all"
+            ],
+            "applicationsFromVerifiedPublisherOnly": false
+        }
+    ],
+    "excludes": []
 }
 ```
 

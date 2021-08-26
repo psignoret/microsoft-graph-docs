@@ -1,18 +1,19 @@
 ---
-title: "Create servicePrincipalCreationConditionSet in excludes collection of servicePrincipalCreationPolicy"
-description: "Create a new servicePrincipalCreationConditionSet object in the excludes collection of a servicePrincipalCreationPolicy."
+title: "Create in servicePrincipalCreationPolicy excludes"
+description: "Add conditions under which a service principal creation event is excluded from a service principal creation policy."
 author: "psignoret"
 localization_priority: Normal
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# Create servicePrincipalCreationConditionSet in excludes collection of servicePrincipalCreationPolicy
+# Create in servicePrincipalCreationPolicy excludes
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add conditions under which a service principal creation event is *excluded* in a service principal creation policy. You do this by adding a [servicePrincipalCreationConditionSet](../resources/serviceprincipalcreationconditionset.md) to the **excludes** collection of a  [servicePrincipalCreationPolicy](../resources/servicePrincipalCreationPolicy.md).
+Add conditions under which a service principal creation event is *excluded* from a service principal creation policy. You do this by adding a [servicePrincipalCreationConditionSet](../resources/serviceprincipalcreationconditionset.md) object to the **excludes** collection of a  [servicePrincipalCreationPolicy](../resources/servicePrincipalCreationPolicy.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -60,6 +61,8 @@ If successful, this method returns a `201 Created` response code and a [serviceP
 
 ### Request
 
+The following is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "create_serviceprincipalcreationconditionset_excludes"
@@ -80,6 +83,8 @@ Content-length: 277
 
 
 ### Response
+
+The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

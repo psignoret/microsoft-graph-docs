@@ -63,6 +63,9 @@ GET https://graph.microsoft.com/beta/policies/servicePrincipalCreationPolicies
 
 
 ### Response
+
+The following is an example of the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -75,16 +78,67 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.servicePrincipalCreationPolicy",
-      "id": "8e53ec67-ec67-8e53-67ec-538e67ec538e",
-      "deletedDateTime": "String (timestamp)",
-      "description": "String",
-      "displayName": "String",
-      "isBuiltIn": "Boolean"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/servicePrincipalCreationPolicies",
+    "value": [
+        {
+            "id": "microsoft-verified-publishers",
+            "displayName": "Verified Publishers",
+            "description": "Apps from verified publishers and apps registered in this organization.",
+            "isBuiltIn": true,
+            "includes": [
+                {
+                    "id": "62ac187d-7371-4f3d-acb1-3eb856c81fae",
+                    "applicationIds": [
+                        "all"
+                    ],
+                    "applicationTenantIds": [
+                        "all"
+                    ],
+                    "applicationPublisherIds": [
+                        "all"
+                    ],
+                    "applicationsFromVerifiedPublisherOnly": true
+                },
+                {
+                    "id": "e5a6edd4-f07f-4cda-b192-298c12e87018",
+                    "applicationIds": [
+                        "all"
+                    ],
+                    "applicationTenantIds": [
+                        "6588179e-3eb8-495f-bf5d-e802f9108689"
+                    ],
+                    "applicationPublisherIds": [
+                        "all"
+                    ],
+                    "applicationsFromVerifiedPublisherOnly": true
+                }
+            ],
+            "excludes": []
+        },
+        {
+            "id": "my-custom-sp-creation-policy",
+            "displayName": "Custom service principal creation policy",
+            "description": "A custom service principal creation policy to customize conditions for creating service principals.",
+            "isBuiltIn": false,
+            "includes": [
+                {
+                    "id": "ad8087b5-fef8-425c-8c92-24c32ed5bdf1",
+                    "applicationIds": [
+                        "all"
+                    ],
+                    "applicationTenantIds": [
+                        "all"
+                    ],
+                    "applicationPublisherIds": [
+                        "all"
+                    ],
+                    "applicationsFromVerifiedPublisherOnly": false
+                }
+            ],
+            "excludes": []
+        }
+    ]
 }
+
 ```
 

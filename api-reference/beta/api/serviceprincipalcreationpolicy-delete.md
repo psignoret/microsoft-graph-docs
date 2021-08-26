@@ -59,7 +59,7 @@ DELETE https://graph.microsoft.com/beta/policies/servicePrincipalCreationPolicie
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true
