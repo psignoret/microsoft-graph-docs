@@ -56,6 +56,7 @@ If successful, this method returns a `200 OK` response code and an updated [serv
 ## Examples
 
 ### Request
+
 <!-- {
   "blockType": "request",
   "name": "update_serviceprincipalcreationpolicy"
@@ -67,11 +68,10 @@ Content-Type: application/json
 Content-length: 199
 
 {
-  "displayName": "String",
-  "description": "String"
+  "displayName": "My service principal creation policy",
+  "description": "This is a custom service principal creation policy to customize conditions for creating service principals."
 }
 ```
-
 
 ### Response
 

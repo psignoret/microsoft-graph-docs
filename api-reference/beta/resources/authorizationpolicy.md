@@ -22,8 +22,9 @@ Represents a policy that can control Azure Active Directory authorization settin
 | [Get authorizationPolicy](../api/authorizationpolicy-get.md) | [authorizationPolicy](authorizationpolicy.md) | Read the authorizationPolicy object. |
 | [Update authorizationPolicy](../api/authorizationpolicy-update.md) | None | Update the authorizationPolicy object. |
 | **Default user role overrides** | | |
-| [List defaultUserRoleOverrides](../api/authorizationpolicy-list-defaultuserroleoverrides.md)|[defaultUserRoleOverride](../resources/defaultuserroleoverride.md) collection|List the collection of [defaultUserRoleOverride](../resources/defaultuserroleoverride.md) objects.|
-| [Update defaultUserRoleOverride](../api/defaultuserroleoverride-update.md)| None |Update a [defaultUserRoleOverride](../resources/defaultuserroleoverride.md) object.|
+| [Get defaultUserRoleOverride](../api/defaultuserroleoverride-update.md)| [defaultUserRoleOverride](../resources/defaultuserroleoverride.md) |Get a [defaultUserRoleOverride](../resources/defaultuserroleoverride.md) object. |
+| [List defaultUserRoleOverrides](../api/authorizationpolicy-list-defaultuserroleoverrides.md)|[defaultUserRoleOverride](../resources/defaultuserroleoverride.md) collection|Retrieve the collection of [defaultUserRoleOverride](../resources/defaultuserroleoverride.md) objects. A **defaultUserRoleOverride** objects allows some [default user permissions](https://docs.microsoft.com/azure/active-directory/fundamentals/users-default-permissions) to be overridden.|
+| [Update defaultUserRoleOverride](../api/defaultuserroleoverride-update.md)| None |Update a [defaultUserRoleOverride](../resources/defaultuserroleoverride.md) object. A **defaultUserRoleOverride** can be updated to customize [users' default permissions](https://docs.microsoft.com/azure/active-directory/fundamentals/users-default-permissions) in an organization, or to revert back to Microsoft's default setting. |
 
 ## Properties  
 | Property | Type | Description | 

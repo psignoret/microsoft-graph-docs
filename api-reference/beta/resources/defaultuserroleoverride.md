@@ -13,25 +13,23 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Overriden permissions of the default Users directory role definition.
-
-Inherits from [entity](../resources/entity.md).
+A **defaultUserRoleOverride** objects allows some [default user permissions](https://docs.microsoft.com/azure/active-directory/fundamentals/users-default-permissions) to be overridden. Each **defaultUserRoleOverride** object identifies a scenario and a list of directory [role permissions](/resources/unifiedrolepermission) applicable to that scenario. Role permissions can be added, updated, or removed to customize the default user permissions in an organization, for the scenario in question. A **defaultUserRoleOverride** can also be reset to Microsoft's default behavior configuration.
 
 ## Methods
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List defaultUserRoleOverrides](../api/authorizationpolicy-list-defaultuserroleoverrides.md)|[defaultUserRoleOverride](../resources/defaultuserroleoverride.md) collection|Get the list of [defaultUserRoleOverride](../resources/defaultuserroleoverride.md) entries and their properties.|
-|[Get defaultUserRoleOverride](../api/defaultuserroleoverride-get.md)|[defaultUserRoleOverride](../resources/defaultuserroleoverride.md)|Read the properties and relationships of a [defaultUserRoleOverride](../resources/defaultuserroleoverride.md) entry.|
-|[Update defaultUserRoleOverride](../api/defaultuserroleoverride-update.md)|[defaultUserRoleOverride](../resources/defaultuserroleoverride.md)|Update the properties of a [defaultUserRoleOverride](../resources/defaultuserroleoverride.md) entry.|
+|[List defaultUserRoleOverrides](../api/authorizationpolicy-list-defaultuserroleoverrides.md)|[defaultUserRoleOverride](../resources/defaultuserroleoverride.md) collection| Retrieve a collection of [defaultUserRoleOverride](../resources/defaultuserroleoverride.md) objects and their properties.|
+|[Get defaultUserRoleOverride](../api/defaultuserroleoverride-get.md)|[defaultUserRoleOverride](../resources/defaultuserroleoverride.md)|Read the properties and relationships of a [defaultUserRoleOverride](../resources/defaultuserroleoverride.md) object.|
+|[Update defaultUserRoleOverride](../api/defaultuserroleoverride-update.md)|[defaultUserRoleOverride](../resources/defaultuserroleoverride.md)|Update the properties of a [defaultUserRoleOverride](../resources/defaultuserroleoverride.md) object.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The scenario identifier for this [defaultUserRoleOverride](../resources/defaultuserroleoverride.md). Allowed values: <ul><li>`ServicePrincipalLimitedCreate`: The limited permissions to create a [servicePrincipal](serviceprincipal.md) object, subject to a [servicePrincipalCreationPolicy](serviceprincipalcreationpolicy.md).</li></ul>|
-|isDefault|Boolean|Indicates whether the Microsoft default setting is in use. Set to `true` to revert back to Microsoft's default setting.|
-|rolePermissions|[unifiedRolePermission](../resources/unifiedrolepermission.md) collection| The list of role permissions which are considered to be a part of the default Users directory [role definition](../resources/unifiedroledefinition.md). |
+|isDefault|Boolean|Indicates whether the Microsoft default setting is in use. Set to `true` to remove overridden **rolePermissions** values and revert back to Microsoft's default setting. Set to `false` when overriding **rolePermissions* to customize [users default permissions](https://docs.microsoft.com/azure/active-directory/fundamentals/users-default-permissions).|
+|rolePermissions|[unifiedRolePermission](../resources/unifiedrolepermission.md) collection| The list of [role permissions](/resources/unifiedrolepermission) which indicate [users' default permissions](https://docs.microsoft.com/azure/active-directory/fundamentals/users-default-permissions) in the organization, for the scenario identified by the **id** property. Adding, updating or removing items from  the **rolePermissions** collection can be used to customize the default user permissions for that scenario. |
 
 ## Relationships
 

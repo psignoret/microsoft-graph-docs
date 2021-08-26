@@ -37,7 +37,7 @@ GET /policies/authorizationPolicy/authorizationPolicy/defaultUserRoleOverrides/{
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` [OData query parameter](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -67,6 +67,8 @@ GET https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationP
 ```
 
 ### Response
+
+The following is an example of the response. The shows the [defaultUserRoleOverride](../resources/defaultuserroleoverride.md) object for the `ServicePrincipalLimitedCreate` scenario, showing the current configuration for whether users are allowed to create service principals is following Microsoft's default settings.
 
 >**Note:** The response object shown here might be shortened for readability.
 

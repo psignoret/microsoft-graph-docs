@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "servicePrincipalCreationPolicy",
           "ChangeType": "Addition",
-          "Description": "Added the [servicePrincipalCreationPolicy](https://docs.microsoft.com/graph/api/resources/serviceprincipalcreationpolicy?view=graph-rest-beta&preserve-view=true) resource type. Service principal creation policies describe the conditions which must be met for the permission to create a service principal to be granted.",
+          "Description": "Added the [servicePrincipalCreationPolicy](https://docs.microsoft.com/graph/api/resources/serviceprincipalcreationpolicy?view=graph-rest-beta&preserve-view=true) resource type, related methods, and operations. Service principal creation policies describe the conditions which must be met for the permission to create a service principal to be granted.",
           "Target": "servicePrincipalCreationPolicy"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "servicePrincipalCreationConditionSet",
           "ChangeType": "Addition",
-          "Description": "Added the [servicePrincipalCreationConditionSet](https://docs.microsoft.com/en-us/graph/api/resources/servicePrincipalCreationConditionSet?view=graph-rest-beta) resource",
+          "Description": "Added the [servicePrincipalCreationConditionSet](https://docs.microsoft.com/en-us/graph/api/resources/servicePrincipalCreationConditionSet?view=graph-rest-beta) resource type. A service principal creation condition set contains a list of conditions which can be used as inclusion or exclusion rules in a [service principal creation policy](https://docs.microsoft.com/graph/api/resources/serviceprincipalcreationpolicy?view=graph-rest-beta&preserve-view=true).",
           "Target": "servicePrincipalCreationConditionSet"
         },
         {

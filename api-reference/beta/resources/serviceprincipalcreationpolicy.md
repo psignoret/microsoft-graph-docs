@@ -40,19 +40,17 @@ Inherits from [policyBase](../resources/policybase.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-| id | String | The unique identifier for the service principal creation policy. The **id** prefix `microsoft-` is reserved for built-in service principal creation policies, and may not be used in a custom service principal creation policy. Only letters, numbers, hyphens (`-`) and underscores (`_`) are allowed. Key. Not nullable. Required on create. Immutable. |
-| displayName | String |The display name for the service principal creation policy.|
-| description |String| The description for the service principal creation policy.|
+| id | String | The unique identifier for the service principal creation policy. The **id** prefix `microsoft-` is reserved for built-in service principal creation policies, and may not be used in a custom service principal creation policy. Only letters, numbers, hyphens (`-`) and underscores (`_`) are allowed. Key. Not nullable. Required on create. Immutable.  Inherited from [policyBase](policyBase.md).|
+| displayName | String |The display name for the service principal creation policy.  Inherited from [policyBase](policyBase.md).|
+| description |String| The description for the service principal creation policy.  Inherited from [policyBase](policyBase.md).|
 | isBuiltIn |Boolean|Indicates whether this is a built-in service principal creation policy. Built-in policies cannot be updated or deleted.|
-| includes | [servicePrincipalCreationConditionSet](serviceprincipalcreationconditionset.md) collection| Condition sets which are *included* in this service principal creation policy. Automatically expanded on `GET`.|
-| excludes |[servicePrincipalCreationConditionSet](serviceprincipalcreationconditionset.md) collection| Condition sets which are *excluded* in this service principal creation policy. Automatically expanded on `GET`.|
 
 ## Relationships
 
 | Relationship | Type |Description|
 |:---------------|:--------|:----------|
-|includes|[servicePrincipalCreationConditionSet](serviceprincipalcreationconditionset.md) collection| Condition sets which are *included* in this service principal creation policy. This navigation is automatically expanded on GET. |
-|excludes|[servicePrincipalCreationConditionSet](serviceprincipalcreationconditionset.md) collection| Condition sets which are *excluded* in this service principal creation policy. This navigation is automatically expanded on GET. |
+|includes|[servicePrincipalCreationConditionSet](serviceprincipalcreationconditionset.md) collection| Condition sets which are *included* in this service principal creation policy. This navigation property is automatically expanded on **GET**. |
+|excludes|[servicePrincipalCreationConditionSet](serviceprincipalcreationconditionset.md) collection| Condition sets which are *excluded* in this service principal creation policy. This navigation property is automatically expanded on **GET**. |
 
 ## JSON representation
 
@@ -64,12 +62,11 @@ Inherits from [policyBase](../resources/policybase.md).
 
 ```json
 {
-  "id": "string (identifier)",
-  "displayName": "string",
-  "description": "string",
-  "isBuiltIn": "Boolean",
-  "includes": "collection(microsoft.graph.servicePrincipalCreationConditionSet)",
-  "excludes": "collection(microsoft.graph.servicePrincipalCreationConditionSet)"
+  "@odata.type": "#microsoft.graph.servicePrincipalCreationConditionSet",
+  "id": "String (identifier)",
+  "displayName": "String",
+  "description": "String",
+  "isBuiltIn": "Boolean"
 }
 ```
 

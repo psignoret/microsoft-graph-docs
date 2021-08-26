@@ -34,14 +34,17 @@ GET /policies/servicePrincipalCreationPolicies/{servicePrincipalCreationPolicyId
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+This method supports the `$select` [OData query parameter](/graph/query-parameters) to help customize the response. The **includes** and **excludes** navigation properties are always expanded.
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response

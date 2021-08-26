@@ -46,6 +46,10 @@ PATCH /policies/authorizationPolicy/authorizationPolicy/defaultUserRoleOverrides
 
 In the request body, supply a JSON representation of the [defaultUserRoleOverride](../resources/defaultuserroleoverride.md) object.
 
+|Property|Type|Description|
+|:---|:---|:---|
+|isDefault|Boolean|Indicates whether the Microsoft default setting is in use. Set to `true` to remove overridden **rolePermissions** values and revert back to Microsoft's default setting. Set to `false` when overriding **rolePermissions* to customize [users default permissions](https://docs.microsoft.com/azure/active-directory/fundamentals/users-default-permissions).|
+|rolePermissions|[unifiedRolePermission](../resources/unifiedrolepermission.md) collection| The list of [role permissions](/resources/unifiedrolepermission) which indicate [users' default permissions](https://docs.microsoft.com/azure/active-directory/fundamentals/users-default-permissions) in the organization, for the scenario identified by the **id** property. Adding, updating or removing items from  the **rolePermissions** collection can be used to customize the default user permissions for that scenario. |
 ## Response
 
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
@@ -54,7 +58,7 @@ If successful, this method returns a `204 No Content` response code. It does not
 
 ### Example 1: Disable service principal creation
 
-By default, users are allowed to cause a service principal to be created, as a result of the application consent process, if the user is allowed to grant consent to the permissions requested by the application. To disable this capability (thus, only allowing users to consent if the application's service principal already exists), override the permissions for the `ServicePrincipalLimitedCreate` scenario to remove all permissions.
+By default, if a user is allowed to grant consent to the permissions requested by an application, they can trigger the creation of a service principal when they grant consent. You can disable this default behavior by removing users' permission to create service principals entirely. This will mean that user can only consent to the permissions if the application's service principal already exists, and if the user is allowed to grant the requested permissions.
 
 #### Request
 
