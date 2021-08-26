@@ -49,7 +49,7 @@ In the request body, supply a JSON representation of the [defaultUserRoleOverrid
 |Property|Type|Description|
 |:---|:---|:---|
 |isDefault|Boolean|Indicates whether the Microsoft default setting is in use. Set to `true` to remove overridden **rolePermissions** values and revert back to Microsoft's default setting. Set to `false` when overriding **rolePermissions* to customize [users default permissions](/azure/active-directory/fundamentals/users-default-permissions).|
-|rolePermissions|[unifiedRolePermission](../resources/unifiedrolepermission.md) collection| The list of [role permissions](/resources/unifiedrolepermission) which indicate [users' default permissions](/azure/active-directory/fundamentals/users-default-permissions) in the organization, for the scenario identified by the **id** property. Adding, updating or removing items from  the **rolePermissions** collection can be used to customize the default user permissions for that scenario. |
+|rolePermissions|[unifiedRolePermission](../resources/unifiedrolepermission.md) collection| The list of [role permissions](../resources/unifiedrolepermission.md) which indicate [users' default permissions](/azure/active-directory/fundamentals/users-default-permissions) in the organization, for the scenario identified by the **id** property. Adding, updating or removing items from  the **rolePermissions** collection can be used to customize the default user permissions for that scenario. |
 ## Response
 
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.

@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Get the collection of [defaultUserRoleOverride](../resources/defaultuserroleoverride.md) objects of the [authorizationPolicy](../resources/authorizationPolicy.md).
 
-Each **defaultUserRoleOverride** object identifies a scenario and a list of directory [role permissions](/resources/unifiedrolepermission) applicable to that scenario. Role permissions can be added, updated, or removed to customize [users' default permissions](/azure/active-directory/fundamentals/users-default-permissions) in an organization, for the scenario in question. A **defaultUserRoleOverride** can also be reset to follow Microsoft's default setting.
+Each **defaultUserRoleOverride** object identifies a scenario and a list of directory [role permissions](../resources/unifiedrolepermission.md) applicable to that scenario. Role permissions can be added, updated, or removed to customize [users' default permissions](/azure/active-directory/fundamentals/users-default-permissions) in an organization, for the scenario in question. A **defaultUserRoleOverride** can also be reset to follow Microsoft's default setting.
 
 ## Permissions
 
