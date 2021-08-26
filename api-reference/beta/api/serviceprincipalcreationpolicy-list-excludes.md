@@ -1,5 +1,5 @@
 ---
-title: "List servicePrincipalCreationPolicy includes"
+title: "List servicePrincipalCreationPolicy excludes"
 description: "Retrieve the condition sets that describe conditions which are excluded from the service principal creation policy."
 author: "psignoret"
 localization_priority: Normal
