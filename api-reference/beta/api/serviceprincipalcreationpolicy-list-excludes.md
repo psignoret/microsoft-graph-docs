@@ -1,5 +1,5 @@
 ---
-title: "List servicePrincipalCreationPolicy excludes"
+title: "List excludes"
 description: "Retrieve the condition sets that describe conditions which are excluded from the service principal creation policy."
 author: "psignoret"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# List servicePrincipalCreationPolicy excludes
+# List excludes
 
 Namespace: microsoft.graph
 

@@ -20,10 +20,10 @@ A service principal creation condition set contains several conditions. For an e
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-| applicationIds | String collection | A list of **appId** values for the applications to match with, or a list with the single value `all` to match any application. Default is the single value `all`. |
-|applicationPublisherIds | String collection | A list of Microsoft Partner Network (MPN) IDs for verified publishers of the application, or a list with the single value `all` to match with applications from any publisher. Default is the single value `all`. |
-| applicationsFromVerifiedPublisherOnly | Boolean | Set to `true` to only match on applications with a verified publisher. Set to `false` to match on any application, even if it does not have a verified publisher. Default is `false` |
-| applicationTenantIds | String collection | A list of Azure Active Directory tenant IDs for the tenant where the application is registered, or a list with the single value `all` to match with applications registered in any tenant. A service principal representing an application registered in any of the tenants identified in this list will match the condition set. Default is the single value `all`. |
+| applicationIds | String collection | A list of **appId** values for the applications to match with, or a list with the single value `all` to match any application. Default is the single value `all`. Optional. |
+|applicationPublisherIds | String collection | A list of Microsoft Partner Network (MPN) IDs for verified publishers of the application, or a list with the single value `all` to match with applications from any publisher. Default is the single value `all`. Optional.|
+| applicationsFromVerifiedPublisherOnly | Boolean | Set to `true` to only match on applications with a verified publisher. Set to `false` to match on any application, even if it does not have a verified publisher. Default is `false`. Optional. |
+| applicationTenantIds | String collection | A list of Azure Active Directory tenant IDs for the tenant where the application is registered, or a list with the single value `all` to match with applications registered in any tenant. A service principal representing an application registered in any of the tenants identified in this list will match the condition set. Default is the single value `all`. Optional. |
 | id | String | The unique identifier for the service principal creation condition set. Key. Read-only. |
 
 ## JSON representation

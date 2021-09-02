@@ -42,7 +42,7 @@ PATCH /policies/servicePrincipalCreationPolicies/{servicePrincipalCreationPolicy
 ## Request body
 In the request body, supply a JSON representation of the [servicePrincipalCreationPolicy](../resources/serviceprincipalcreationpolicy.md) object.
 
-The following table shows the properties that are required when you update the [servicePrincipalCreationPolicy](../resources/serviceprincipalcreationpolicy.md).
+In the request body, supply the values for relevant properties that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, do not include properties that are not changing.
 
 |Property|Type|Description|
 |:---|:---|:---|

@@ -1,5 +1,5 @@
 ---
-title: "List servicePrincipalCreationPolicy includes"
+title: "List includes"
 description: "Retrieve the condition sets that describe conditions which are included in the service principal creation policy."
 author: "psignoret"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# List servicePrincipalCreationPolicy includes
+# List includes
 
 Namespace: microsoft.graph
 

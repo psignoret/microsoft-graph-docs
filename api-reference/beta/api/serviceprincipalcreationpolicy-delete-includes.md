@@ -1,5 +1,5 @@
 ---
-title: "Delete from servicePrincipalCreationPolicy includes"
+title: "Delete includes"
 description: "Deletes an included condition set from service principal creation policy."
 localization_priority: Normal
 doc_type: apiPageType
@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 author: "psignoret"
 ---
 
-# Delete from servicePrincipalCreationPolicy includes
+# Delete includes
 
 Namespace: microsoft.graph
 

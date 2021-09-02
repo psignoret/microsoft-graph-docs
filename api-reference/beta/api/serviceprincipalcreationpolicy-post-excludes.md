@@ -1,5 +1,5 @@
 ---
-title: "Create in servicePrincipalCreationPolicy excludes"
+title: "Create excludes"
 description: "Add conditions under which a service principal creation event is excluded from a service principal creation policy."
 author: "psignoret"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# Create in servicePrincipalCreationPolicy excludes
+# Create excludes
 
 Namespace: microsoft.graph
 

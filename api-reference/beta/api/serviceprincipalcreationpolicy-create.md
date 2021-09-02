@@ -43,13 +43,13 @@ POST /policies/servicePrincipalCreationPolicies
 
 ## Request body
 
-In the request body, supply a JSON representation of the [servicePrincipalCreationPolicy](../resources/serviceprincipalcreationpolicy.md) object.
+In the request body, supply a JSON representation of the [servicePrincipalCreationPolicy](../resources/serviceprincipalcreationpolicy.md) object. You can specify the following properties when creating a [servicePrincipalCreationPolicy](../resources/serviceprincipalcreationpolicy.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-| id | String | The unique identifier for the service principal creation policy. The **id** prefix `microsoft-` is reserved for built-in service principal creation policies, and may not be used in a custom service principal creation policy. Only letters, numbers, hyphens (`-`) and underscores (`_`) are allowed. Key. Not nullable. Required on create. Immutable.  Inherited from [policyBase](../resources/policyBase.md).|
-| displayName | String |The display name for the service principal creation policy.  Inherited from [policyBase](../resources/policyBase.md).|
-| description |String| The description for the service principal creation policy.  Inherited from [policyBase](../resources/policyBase.md).|
+| id | String | The unique identifier for the service principal creation policy. The **id** prefix `microsoft-` is reserved for built-in service principal creation policies, and may not be used in a custom service principal creation policy. Only letters, numbers, hyphens (`-`) and underscores (`_`) are allowed. Key. Required.|
+| displayName | String |The display name for the service principal creation policy. Optional.|
+| description |String| The description for the service principal creation policy.  Optional.|
 
 ## Response
 

@@ -11678,6 +11678,34 @@ items:
                   href: api/permissiongrantpolicy-post-excludes.md
                 - name: Delete from excludes
                   href: api/permissiongrantpolicy-delete-excludes.md
+          - name: Service principal creation policy
+            href: resources/serviceprincipalcreationpolicy.md
+            items:
+            - name: Create
+              href: api/serviceprincipalcreationpolicy-create.md
+            - name: List
+              href: api/serviceprincipalcreationpolicy-list.md
+            - name: Get
+              href: api/serviceprincipalcreationpolicy-get.md
+            - name: Update
+              href: api/serviceprincipalcreationpolicy-update.md
+            - name: Delete
+              href: api/serviceprincipalcreationpolicy-delete.md
+            - name: Service principal creation condition sets
+              href: resources/serviceprincipalcreationconditionset.md
+              items:
+                - name: List includes
+                  href: api/serviceprincipalcreationpolicy-list-includes.md
+                - name: Create includes
+                  href: api/serviceprincipalcreationpolicy-post-includes.md
+                - name: Delete includes
+                  href: api/serviceprincipalcreationpolicy-delete-includes.md
+                - name: List excludes
+                  href: api/serviceprincipalcreationpolicy-list-excludes.md
+                - name: Create excludes
+                  href: api/serviceprincipalcreationpolicy-post-excludes.md
+                - name: Delete excludes
+                  href: api/serviceprincipalcreationpolicy-delete-excludes.md
           - name: Token issuance policy
             href: resources/tokenissuancepolicy.md
             items:

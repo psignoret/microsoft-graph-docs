@@ -1,5 +1,5 @@
 ---
-title: "Create in servicePrincipalCreationPolicy includes"
+title: "Create includes"
 description: "Add conditions under which a service principal creation event is *included* in a service principal creation policy."
 author: "psignoret"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# Create in servicePrincipalCreationPolicy includes
+# Create includes
 
 Namespace: microsoft.graph
 
@@ -41,17 +41,14 @@ POST /policies/servicePrincipalCreationPolicies/{servicePrincipalCreationPolicyI
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [servicePrincipalCreationConditionSet](../resources/serviceprincipalcreationconditionset.md) object.
-
-The following table shows the properties that are required when you create the [servicePrincipalCreationConditionSet](../resources/serviceprincipalcreationconditionset.md).
+In the request body, supply a JSON representation of the [servicePrincipalCreationConditionSet](../resources/serviceprincipalcreationconditionset.md) object. You can specify the following properties when creating a [servicePrincipalCreationConditionSet](../resources/serviceprincipalcreationconditionset.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-| id | String | The unique identifier for the service principal creation condition set. Key. Read-only. |
-| applicationIds | String collection | A list of **appId** values for the applications to match with, or a list with the single value `all` to match any application. Default is the single value `all`. |
-|applicationPublisherIds | String collection | A list of Microsoft Partner Network (MPN) IDs for verified publishers of the application, or a list with the single value `all` to match with applications from any publisher. Default is the single value `all`. |
-| applicationsFromVerifiedPublisherOnly | Boolean | Set to `true` to only match on applications with a verified publisher. Set to `false` to match on any application, even if it does not have a verified publisher. Default is `false` |
-| applicationTenantIds | String collection | A list of Azure Active Directory tenant IDs in which the application is registered, or a list with the single value `all` to match with applications registered in any tenant. Default is the single value `all`. |
+| applicationIds | String collection | A list of **appId** values for the applications to match with, or a list with the single value `all` to match any application. Default is the single value `all`. Optional. |
+|applicationPublisherIds | String collection | A list of Microsoft Partner Network (MPN) IDs for verified publishers of the application, or a list with the single value `all` to match with applications from any publisher. Default is the single value `all`. Optional. |
+| applicationsFromVerifiedPublisherOnly | Boolean | Set to `true` to only match on applications with a verified publisher. Set to `false` to match on any application, even if it does not have a verified publisher. Default is `false`.  Optional.|
+| applicationTenantIds | String collection | A list of Azure Active Directory tenant IDs in which the application is registered, or a list with the single value `all` to match with applications registered in any tenant. Default is the single value `all`. Optional. |
 
 ## Response
 

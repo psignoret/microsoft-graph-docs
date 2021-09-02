@@ -44,12 +44,12 @@ PATCH /policies/authorizationPolicy/authorizationPolicy/defaultUserRoleOverrides
 
 ## Request body
 
-In the request body, supply a JSON representation of the [defaultUserRoleOverride](../resources/defaultuserroleoverride.md) object.
+In the request body, supply the values for relevant properties that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, do not include properties that are not changing.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|isDefault|Boolean|Indicates whether the Microsoft default setting is in use. Set to `true` to remove overridden **rolePermissions** values and revert back to Microsoft's default setting. Set to `false` when overriding **rolePermissions* to customize [users default permissions](/azure/active-directory/fundamentals/users-default-permissions).|
-|rolePermissions|[unifiedRolePermission](../resources/unifiedrolepermission.md) collection| The list of [role permissions](../resources/unifiedrolepermission.md) which indicate [users' default permissions](/azure/active-directory/fundamentals/users-default-permissions) in the organization, for the scenario identified by the **id** property. Adding, updating or removing items from  the **rolePermissions** collection can be used to customize the default user permissions for that scenario. |
+|isDefault|Boolean|Indicates whether the Microsoft default setting is in use. Set to `true` to remove overridden **rolePermissions** values and revert back to Microsoft's default setting. Set to `false` when overriding **rolePermissions* to customize [users default permissions](/azure/active-directory/fundamentals/users-default-permissions). Optional.|
+|rolePermissions|[unifiedRolePermission](../resources/unifiedrolepermission.md) collection| The list of [role permissions](../resources/unifiedrolepermission.md) which indicate [users' default permissions](/azure/active-directory/fundamentals/users-default-permissions) in the organization, for the scenario identified by the **id** property. Adding, updating, or removing items from  the **rolePermissions** collection can be used to customize the default user permissions for that scenario. Optional. |
 ## Response
 
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.

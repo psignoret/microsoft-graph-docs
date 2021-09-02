@@ -23,7 +23,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "servicePrincipalCreationPolicies",
           "ChangeType": "Addition",
-          "Description": "Added the **servicePrincipalCreationPolicies** relationship to the [policies](https://docs.microsoft.com/en-us/graph/api/resources/policy-overview?view=graph-rest-beta) singleton.",
+          "Description": "Added the **servicePrincipalCreationPolicies** relationship to the [policies](https://docs.microsoft.com/en-us/graph/api/resources/policyroot?view=graph-rest-beta) singleton.",
           "Target": "policies"
         },
         {

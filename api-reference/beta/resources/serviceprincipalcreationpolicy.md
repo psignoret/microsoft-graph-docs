@@ -29,13 +29,13 @@ Inherits from [policyBase](../resources/policybase.md).
 |[Get service principal creation policy](../api/serviceprincipalcreationpolicy-get.md) | [servicePrincipalCreationPolicy](serviceprincipalcreationpolicy.md) |Read properties and relationships of servicePrincipalCreationPolicy object.|
 |[Update service principal creation policy](../api/serviceprincipalcreationpolicy-update.md) | [servicePrincipalCreationPolicy](serviceprincipalcreationpolicy.md)  |Update servicePrincipalCreationPolicy object. |
 |**Include condition sets**| | |
-|[List include condition sets](../api/serviceprincipalcreationpolicy-list-includes.md) |[servicePrincipalCreationConditionSet](serviceprincipalcreationconditionset.md) collection| Get the condition sets which are *included* in this service principal creation policy.|
-|[Add include condition set](../api/serviceprincipalcreationpolicy-post-includes.md) |[servicePrincipalCreationConditionSet](serviceprincipalcreationconditionset.md) | Add a condition set which is *included* from this service principal creation policy. |
-|[Remove include condition set](../api/serviceprincipalcreationpolicy-delete-includes.md) | None | Remove a condition set which is *included* from this service principal creation policy.|
+|[List include condition sets](../api/serviceprincipalcreationpolicy-list-includes.md) |[servicePrincipalCreationConditionSet](serviceprincipalcreationconditionset.md) collection| Get the condition sets in the **includes** navigation property of a service principal creation policy.|
+|[Add include condition set](../api/serviceprincipalcreationpolicy-post-includes.md) |[servicePrincipalCreationConditionSet](serviceprincipalcreationconditionset.md) | Add a condition set to the **includes** navigation property of a service principal creation policy. |
+|[Remove include condition set](../api/serviceprincipalcreationpolicy-delete-includes.md) | None | Remove a condition set from the **includes** navigation property of a service principal creation policy.|
 |**Exclude condition sets**| | |
-|[List exclude condition sets](../api/serviceprincipalcreationpolicy-list-excludes.md) |[servicePrincipalCreationConditionSet](serviceprincipalcreationconditionset.md) collection| Get the condition sets which are *excluded* in this service principal creation policy.|
-|[Add exclude condition set](../api/serviceprincipalcreationpolicy-post-excludes.md) |[servicePrincipalCreationConditionSet](serviceprincipalcreationconditionset.md) | Add a condition set which is *excluded* from this service principal creation policy. |
-|[Remove exclude condition set](../api/serviceprincipalcreationpolicy-delete-excludes.md) | None | Remove a condition set which is *excluded* from this service principal creation policy.|
+|[List exclude condition sets](../api/serviceprincipalcreationpolicy-list-excludes.md) |[servicePrincipalCreationConditionSet](serviceprincipalcreationconditionset.md) collection| Get the condition sets in the **excludes** navigation property of a service principal creation policy.|
+|[Add exclude condition set](../api/serviceprincipalcreationpolicy-post-excludes.md) |[servicePrincipalCreationConditionSet](serviceprincipalcreationconditionset.md) | Add a condition set to the **excludes** navigation property of a service principal creation policy. |
+|[Remove exclude condition set](../api/serviceprincipalcreationpolicy-delete-excludes.md) | None | Remove a condition set from the **excludes** navigation property of a service principal creation policy.|
 
 ## Properties
 |Property|Type|Description|
