@@ -73,7 +73,7 @@ GET https://graph.microsoft.com/beta/policies/servicePrincipalCreationPolicies/m
   "@odata.type": "microsoft.graph.servicePrincipalCreationPolicy"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -95,7 +95,8 @@ Content-Type: application/json
             "applicationPublisherIds": [
                 "all"
             ],
-            "applicationsFromVerifiedPublisherOnly": false
+            "applicationsFromVerifiedPublisherOnly": false,
+            "certifiedApplicationsOnly": false
         }
     ],
     "excludes": []

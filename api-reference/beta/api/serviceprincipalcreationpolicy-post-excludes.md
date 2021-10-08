@@ -52,6 +52,7 @@ The following table shows the properties that are required when you create the [
 |applicationPublisherIds | String collection | A list of Microsoft Partner Network (MPN) IDs for verified publishers of the application, or a list with the single value `all` to match with applications from any publisher. Default is the single value `all`. |
 | applicationsFromVerifiedPublisherOnly | Boolean | Set to `true` to only match on applications with a verified publisher. Set to `false` to match on any application, even if it does not have a verified publisher. Default is `false` |
 | applicationTenantIds | String collection | A list of Azure Active Directory tenant IDs in which the application is registered, or a list with the single value `all` to match with applications registered in any tenant. Default is the single value `all`. |
+| certifiedApplicationsOnly | Boolean | Set to `true` to only match on applications that are Microsoft 365 certified. Set to `false` to match on any other client app. Default is `false`. |
 
 ## Response
 
@@ -110,7 +111,8 @@ Content-Type: application/json
     "applicationPublisherIds": [
         "all"
     ],
-    "applicationsFromVerifiedPublisherOnly": false
+    "applicationsFromVerifiedPublisherOnly": false,
+    "certifiedApplicationsOnly": false
 }
 ```
 

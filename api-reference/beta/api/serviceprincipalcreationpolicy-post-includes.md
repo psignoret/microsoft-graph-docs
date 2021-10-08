@@ -49,6 +49,7 @@ In the request body, supply a JSON representation of the [servicePrincipalCreati
 |applicationPublisherIds | String collection | A list of Microsoft Partner Network (MPN) IDs for verified publishers of the application, or a list with the single value `all` to match with applications from any publisher. Default is the single value `all`. Optional. |
 | applicationsFromVerifiedPublisherOnly | Boolean | Set to `true` to only match on applications with a verified publisher. Set to `false` to match on any application, even if it does not have a verified publisher. Default is `false`.  Optional.|
 | applicationTenantIds | String collection | A list of Azure Active Directory tenant IDs in which the application is registered, or a list with the single value `all` to match with applications registered in any tenant. Default is the single value `all`. Optional. |
+| certifiedApplicationsOnly | Boolean | Set to `true` to only match on applications that are Microsoft 365 certified. Set to `false` to match on any other client app. Default is `false`. |
 
 ## Response
 
@@ -92,7 +93,8 @@ Content-Type: application/json
   "applicationIds": [ "all" ],
   "applicationTenantIds": [ "all" ],
   "applicationPublisherIds": [ "all" ],
-  "applicationsFromVerifiedPublisherOnly": true
+  "applicationsFromVerifiedPublisherOnly": true,
+  "certifiedApplicationsOnly": false
 }
 ```
 

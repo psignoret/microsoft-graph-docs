@@ -24,6 +24,7 @@ A service principal creation condition set contains several conditions. For an e
 |applicationPublisherIds | String collection | A list of Microsoft Partner Network (MPN) IDs for verified publishers of the application, or a list with the single value `all` to match with applications from any publisher. Default is the single value `all`. Optional.|
 | applicationsFromVerifiedPublisherOnly | Boolean | Set to `true` to only match on applications with a verified publisher. Set to `false` to match on any application, even if it does not have a verified publisher. Default is `false`. Optional. |
 | applicationTenantIds | String collection | A list of Azure Active Directory tenant IDs for the tenant where the application is registered, or a list with the single value `all` to match with applications registered in any tenant. A service principal representing an application registered in any of the tenants identified in this list will match the condition set. Default is the single value `all`. Optional. |
+| certifiedApplicationsOnly | Boolean | Set to `true` to only match on applications that are Microsoft 365 certified. Set to `false` to match on any other client app. Default is `false`. |
 | id | String | The unique identifier for the service principal creation condition set. Key. Read-only. |
 
 ## JSON representation
@@ -51,7 +52,8 @@ The following is a JSON representation of the resource.
   "applicationPublisherIds": [
     "String"
   ],
-  "applicationsFromVerifiedPublisherOnly": "Boolean"
+  "applicationsFromVerifiedPublisherOnly": "Boolean",
+  "certifiedApplicationsOnly": "Boolean"
 }
 ```
 

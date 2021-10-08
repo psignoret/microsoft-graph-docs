@@ -97,7 +97,8 @@ Content-Type: application/json
                     "applicationPublisherIds": [
                         "all"
                     ],
-                    "applicationsFromVerifiedPublisherOnly": true
+                    "applicationsFromVerifiedPublisherOnly": true,
+                    "certifiedApplicationsOnly": false
                 },
                 {
                     "id": "e5a6edd4-f07f-4cda-b192-298c12e87018",
@@ -110,7 +111,8 @@ Content-Type: application/json
                     "applicationPublisherIds": [
                         "all"
                     ],
-                    "applicationsFromVerifiedPublisherOnly": true
+                    "applicationsFromVerifiedPublisherOnly": true,
+                    "certifiedApplicationsOnly": false
                 }
             ],
             "excludes": []
@@ -132,7 +134,8 @@ Content-Type: application/json
                     "applicationPublisherIds": [
                         "all"
                     ],
-                    "applicationsFromVerifiedPublisherOnly": false
+                    "applicationsFromVerifiedPublisherOnly": false,
+                    "certifiedApplicationsOnly": false
                 }
             ],
             "excludes": []

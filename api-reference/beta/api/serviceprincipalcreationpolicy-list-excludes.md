@@ -93,7 +93,8 @@ Content-Type: application/json
             "applicationPublisherIds": [
                 "all"
             ],
-            "applicationsFromVerifiedPublisherOnly": false
+            "applicationsFromVerifiedPublisherOnly": false,
+            "certifiedApplicationsOnly": false
         }
     ]
 }
