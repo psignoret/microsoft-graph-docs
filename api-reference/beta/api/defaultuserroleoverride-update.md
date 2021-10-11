@@ -1,7 +1,7 @@
 ---
 title: "Update defaultUserRoleOverride"
 description: "Update the properties of a defaultUserRoleOverride object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "abhijeetsinha"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"

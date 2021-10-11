@@ -1,7 +1,7 @@
 ---
 title: "defaultUserRoleOverride resource type"
 description: "Overriden permissions of the default Users directory role definition."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "abhijeetsinha"
 ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"

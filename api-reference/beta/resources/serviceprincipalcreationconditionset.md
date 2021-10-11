@@ -1,7 +1,7 @@
 ---
 title: "servicePrincipalCreationConditionSet resource type"
 description: "Specifies a matching rule with conditions under which an event is included or excluded from a service principal creation policy."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 author: "psignoret"

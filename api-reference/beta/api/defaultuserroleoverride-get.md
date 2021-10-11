@@ -2,7 +2,7 @@
 title: "Get defaultUserRoleOverride"
 description: "Read the properties and relationships of a defaultUserRoleOverride object."
 author: abhijeetsinha
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---

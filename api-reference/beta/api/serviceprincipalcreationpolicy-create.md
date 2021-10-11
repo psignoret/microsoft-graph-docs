@@ -1,7 +1,7 @@
 ---
 title: "Create servicePrincipalCreationPolicy"
 description: "Creates a servicePrincipalCreationPolicy object that describes the conditions under which a service principal may be created."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "identity-and-sign-in"
 author: "psignoret"

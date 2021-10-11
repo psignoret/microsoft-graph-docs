@@ -2,7 +2,7 @@
 title: "List defaultUserRoleOverrides"
 description: "Get the defaultUserRoleOverrides collection of authorizationPolicy"
 author: abhijeetsinha
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---

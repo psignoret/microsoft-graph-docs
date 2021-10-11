@@ -2,7 +2,7 @@
 title: "Create excludes"
 description: "Add conditions under which a service principal creation event is excluded from a service principal creation policy."
 author: "psignoret"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---

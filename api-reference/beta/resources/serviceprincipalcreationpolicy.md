@@ -2,7 +2,7 @@
 title: "servicePrincipalCreationPolicy resource type"
 description: "Specifies the conditions under which creating a service principal can be authorized."
 author: "psignoret"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Delete excludes"
 description: "Deletes an excluded condition set from service principal creation policy."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "identity-and-sign-in"
 author: "psignoret"

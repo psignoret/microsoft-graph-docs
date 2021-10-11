@@ -2,7 +2,7 @@
 title: "Update servicePrincipalCreationPolicy"
 description: "Update the properties of a servicePrincipalCreationPolicy object."
 author: "psignoret"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---

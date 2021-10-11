@@ -2,7 +2,7 @@
 title: "List includes"
 description: "Retrieve the condition sets that describe conditions which are included in the service principal creation policy."
 author: "psignoret"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---

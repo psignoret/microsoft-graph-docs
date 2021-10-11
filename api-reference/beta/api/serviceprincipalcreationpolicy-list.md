@@ -2,7 +2,7 @@
 title: "List servicePrincipalCreationPolicies"
 description: "Get a list of the servicePrincipalCreationPolicy objects and their properties."
 author: "psignoret"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
