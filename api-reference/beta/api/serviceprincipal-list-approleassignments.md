@@ -118,7 +118,7 @@ Content-type: application/json
     {
       "id": "UxOIjjUXr0WvIe4TRFgqTY4z9Wu5KxpBtlEpoTGjw-A",
       "creationTimestamp": "2021-02-02T04:22:45.4980259Z",
-      "createdDateTime": "2021-02-02T04:22:45.9480566Z",
+      "createdDateTime": "2021-02-02T04:22:45.4980259Z",
       "lastModifiedDateTime": "2022-02-15T16:24:20.3402545Z",
       "appRoleId": "e2a3a72e-5f79-4c64-b1b1-878b674786c9",
       "principalDisplayName": "dxprovisioning-graphapi-client",
