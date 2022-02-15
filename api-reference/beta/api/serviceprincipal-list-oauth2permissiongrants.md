@@ -122,7 +122,9 @@ Content-Length: 253
       "resourceId": "resourceId-value",
       "scope": "scope-value",
       "startTime": "datetime-value",
-      "expiryTime": "datetime-value"
+      "expiryTime": "datetime-value",
+      "createdDateTime": "2021-02-02T04:22:45.9480566Z",
+      "lastModifiedDateTime": "2022-02-15T16:24:20.3402545Z"
     }
   ]
 }

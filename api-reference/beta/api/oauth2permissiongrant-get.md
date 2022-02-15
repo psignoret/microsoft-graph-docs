@@ -121,7 +121,9 @@ Content-Type: application/json
     "principalId": null,
     "resourceId": "1804a6f8-e623-4520-8f40-ba1b0c11c42d",
     "scope": "User.Read Group.ReadWrite.All",
-    "startTime": "0001-01-01T00:00:00Z"
+    "startTime": "0001-01-01T00:00:00Z",
+    "createdDateTime": "2021-02-02T04:22:45.9480566Z",
+    "lastModifiedDateTime": "2022-02-15T16:24:20.3402545Z"
 }
 ```
 

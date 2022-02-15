@@ -128,7 +128,9 @@ Content-Type: application/json
       "principalId": "7d54cb02-aaa3-4016-9f9c-a4b49422dd9b",
       "resourceId": "27fb395a-fb00-45fe-865e-e71db689eea0",
       "scope": " Contacts.ReadWrite openid profile",
-      "startTime": "0001-01-01T00:00:00Z"
+      "startTime": "0001-01-01T00:00:00Z",
+      "createdDateTime": "2021-02-02T04:22:45.9480566Z",
+      "lastModifiedDateTime": "2022-02-15T16:24:20.3402545Z"
     }
   ]
 }

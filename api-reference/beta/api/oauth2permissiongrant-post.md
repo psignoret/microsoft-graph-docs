@@ -132,7 +132,9 @@ Content-Type: application/json
   "resourceId": "resourceId-value",
   "scope": "scope-value",
   "startTime": "2016-10-19T10:37:00Z",
-  "expiryTime": "2016-10-19T10:37:00Z"
+  "expiryTime": "2016-10-19T10:37:00Z",
+  "createdDateTime": "2021-02-02T04:22:45.9480566Z",
+  "lastModifiedDateTime": "2022-02-15T16:24:20.3402545Z"
 }
 ```
 

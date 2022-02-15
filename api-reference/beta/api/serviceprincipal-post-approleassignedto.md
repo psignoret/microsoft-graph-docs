@@ -129,6 +129,8 @@ Content-type: application/json
   "deletedDateTime": null,
   "appRoleId": "ef7437e6-4f94-4a0a-a110-a439eb2aa8f7",
   "creationTimestamp": "2021-02-15T16:14:59.8643039Z",
+  "createdDateTime": "2021-02-02T04:22:45.9480566Z",
+  "lastModifiedDateTime": "2022-02-15T16:24:20.3402545Z",
   "principalDisplayName": "Parents of Contoso",
   "principalId": "33ad69f9-da99-4bed-acd0-3f24235cb296",
   "principalType": "Group",

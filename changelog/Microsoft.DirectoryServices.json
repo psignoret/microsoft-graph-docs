@@ -3,6 +3,48 @@
     {
       "ChangeList": [
         {
+          "Id": "72728529-4bac-460b-ae42-7774465f759b",
+          "ApiChange": "Property",
+          "ChangedApiName": "createdDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **createdDateTime** property to [appRoleAssignment](https://docs.microsoft.com/en-us/graph/api/resources/approleassignment?view=graph-rest-1.0) resource.",
+          "Target": "appRoleAssignment"
+        },
+        {
+          "Id": "72728529-4bac-460b-ae42-7774465f759b",
+          "ApiChange": "Property",
+          "ChangedApiName": "lastModifiedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **lastModifiedDateTime** property to [appRoleAssignment](https://docs.microsoft.com/en-us/graph/api/resources/approleassignment?view=graph-rest-1.0) resource.",
+          "Target": "appRoleAssignment"
+        },
+        {
+          "Id": "72728529-4bac-460b-ae42-7774465f759b",
+          "ApiChange": "Property",
+          "ChangedApiName": "createdDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **createdDateTime** property to [oauth2PermissionGrant](https://docs.microsoft.com/en-us/graph/api/resources/oauth2permissiongrant?view=graph-rest-1.0) resource.",
+          "Target": "oauth2PermissionGrant"
+        },
+        {
+          "Id": "72728529-4bac-460b-ae42-7774465f759b",
+          "ApiChange": "Property",
+          "ChangedApiName": "lastModifiedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **lastModifiedDateTime** property to [oauth2PermissionGrant](https://docs.microsoft.com/en-us/graph/api/resources/oauth2permissiongrant?view=graph-rest-1.0) resource.",
+          "Target": "oauth2PermissionGrant"
+        }
+      ],
+      "Id": "72728529-4bac-460b-ae42-7774465f759b",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-02-15T16:41:31.5706672Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
           "ApiChange": "Property",
           "ChangedApiName": "customAccountResetCredentialsUrl",
