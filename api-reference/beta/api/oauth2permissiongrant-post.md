@@ -133,7 +133,9 @@ Content-Type: application/json
     "principalId": null,
     "resourceId": "943603e4-e787-4fe9-93d1-e30f749aae39",
     "scope": "DelegatedPermissionGrant.ReadWrite.All",
-    "startTime": "2022-03-17T00:00:00Z"
+    "startTime": "2022-03-17T00:00:00Z",
+    "createdDateTime": "2021-02-02T04:22:45.9480566Z",
+    "lastModifiedDateTime": "2022-02-15T16:24:20.3402545Z"
 }
 ```
 
