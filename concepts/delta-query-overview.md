@@ -109,7 +109,6 @@ Delta query is currently supported for the following resources. Note that some r
 | Administrative units (preview)                                 | [delta](/graph/api/administrativeunit-delta) function (preview) of the [administrativeUnit](/graph/api/resources/administrativeunit) resource                |
 | Assignment categories                                          | [delta](/graph/api/educationcategory-delta) function of the [educationCategory](/graph/api/resources/educationcategory) resource                                    |
 | Chat messages in a channel                                     | [delta](/graph/api/chatmessage-delta) function (preview) of the [chatMessage](/graph/api/resources/chatmessage)                                              |
-| Directory objects                                              | [delta](/graph/api/directoryobject-delta) function (preview) of the [directoryObject](/graph/api/resources/directoryobject) resource                         |
 | Directory roles                                                | [delta](/graph/api/directoryrole-delta) function of the [directoryRole](/graph/api/resources/directoryrole) resource |
 | Drive items\*                                                  | [delta](/graph/api/driveitem-delta) function of the [driveItem](/graph/api/resources/driveitem) resource             |
 | Education assignments                                          | [delta](/graph/api/educationassignment-delta) function of the [educationAssignment](/graph/api/resources/educationassignment) resource                                    |
@@ -199,7 +198,12 @@ Delta query can return a response code of `410 (gone)` and a **Location** header
 
 ### Token duration
 
-Delta tokens are only valid for a specific period before the client application needs to run a full synchronization again. For directory objects (**application**, **administrativeUnit**, **directoryObject**, **directoryRole**, **group**, **orgContact**, **oauth2permissiongrant**, **servicePrincipal**, and **user**), the limit is 7 days. For education objects (**educationSchool**, **educationUser**, and **educationClass**), the limit is 7 days. For Outlook entities (**message**, **mailFolder**, **event**, **contact**, **contactFolder**, **todoTask**, and **todoTaskList**), the upper limit is not fixed; it's dependent on the size of the internal delta token cache. While new delta tokens are continuously added in the cache, after the cache capacity is exceeded, the older delta tokens are deleted.
+Delta tokens are only valid for a specific period before the client application needs to run a full synchronization again.
++ For [directory objects](/graph/api/resources/directoryobject), the limit is seven days. 
++ For education objects (**educationSchool**, **educationUser**, and **educationClass**), the limit is seven days.
++ For Outlook entities (**message**, **mailFolder**, **event**, **contact**, **contactFolder**, **todoTask**, and **todoTaskList**), the upper limit is not fixed; it's dependent on the size of the internal delta token cache. While new delta tokens are continuously added in the cache, after the cache capacity is exceeded, the older delta tokens are deleted.
+
+In case of an expired token, the service should respond with a 40X-series error with error codes such as `syncStateNotFound`. For more information, see (Error codes in Microsoft Graph](/graph/errors#code-property).
 
 ## Prerequisites
 
