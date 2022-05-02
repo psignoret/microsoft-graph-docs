@@ -40,7 +40,7 @@ An app role assignment where the assigned principal is a service principal is an
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -52,16 +52,16 @@ Here is a JSON representation of the resource
 
 ```json
 {
-  "id": "String",
-  "creationTimestamp": "String (timestamp)",
+  "appRoleId": "Guid",
   "createdDateTime": "String (timestamp)",
+  "creationTimestamp": "String (timestamp)",
+  "id": "String",
   "lastModifiedDateTime": "String (timestamp)",
   "principalDisplayName": "String",
   "principalId": "Guid",
   "principalType": "String",
   "resourceDisplayName": "String",
-  "resourceId": "Guid",
-  "appRoleId": "Guid"
+  "resourceId": "Guid"
 }
 ```
 
