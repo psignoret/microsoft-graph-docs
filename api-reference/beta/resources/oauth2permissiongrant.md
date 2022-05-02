@@ -65,12 +65,14 @@ The following is a JSON representation of the resource.
 {
   "clientId": "string",
   "consentType": "string",
+  "createdDateTime": "String (timestamp)",
+  "expiryTime": "String (timestamp)",
   "id": "string (identifier)",
+  "lastModifiedDateTime": "String (timestamp)",
   "principalId": "string",
   "resourceId": "string",
   "scope": "string",
-  "startTime": "String (timestamp)",
-  "expiryTime": "String (timestamp)"
+  "startTime": "String (timestamp)"
 }
 ```
 
