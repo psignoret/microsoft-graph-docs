@@ -1171,7 +1171,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "createdDateTime",
           "ChangeType": "Addition",
-          "Description": "Added the **createdDateTime** property to the [appRoleAssignment](https://docs.microsoft.com/en-us/graph/api/resources/approleassignment?view=graph-rest-beta) resource.",
+          "Description": "Added the **createdDateTime** property to the [appRoleAssignment](https://learn.microsoft.com/en-us/graph/api/resources/approleassignment?view=graph-rest-beta) resource.",
           "Target": "appRoleAssignment"
         },
         {
@@ -1179,7 +1179,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "lastModifiedDateTime",
           "ChangeType": "Addition",
-          "Description": "Added the **lastModifiedDateTime** property to the [appRoleAssignment](https://docs.microsoft.com/en-us/graph/api/resources/approleassignment?view=graph-rest-beta) resource.",
+          "Description": "Added the **lastModifiedDateTime** property to the [appRoleAssignment](https://learn.microsoft.com/en-us/graph/api/resources/approleassignment?view=graph-rest-beta) resource.",
           "Target": "appRoleAssignment"
         },
         {
@@ -1187,7 +1187,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "createdDateTime",
           "ChangeType": "Addition",
-          "Description": "Added the **createdDateTime** property to the [oauth2PermissionGrant](https://docs.microsoft.com/en-us/graph/api/resources/oauth2permissiongrant?view=graph-rest-beta) resource.",
+          "Description": "Added the **createdDateTime** property to the [oauth2PermissionGrant](https://learn.microsoft.com/en-us/graph/api/resources/oauth2permissiongrant?view=graph-rest-beta) resource.",
           "Target": "oauth2PermissionGrant"
         },
         {
@@ -1195,7 +1195,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "lastModifiedDateTime",
           "ChangeType": "Addition",
-          "Description": "Added the **lastModifiedDateTime** property to the [oauth2PermissionGrant](https://docs.microsoft.com/en-us/graph/api/resources/oauth2permissiongrant?view=graph-rest-beta) resource.",
+          "Description": "Added the **lastModifiedDateTime** property to the [oauth2PermissionGrant](https://learn.microsoft.com/en-us/graph/api/resources/oauth2permissiongrant?view=graph-rest-beta) resource.",
           "Target": "oauth2PermissionGrant"
         }
       ],
