@@ -5628,12 +5628,19 @@ Possible values for user account types (group membership), per Windows definitio
 |all|
 |unknownFutureValue|
 
-
-### siteTemplateType values 
+### siteTemplateType values
 
 |Member|
 |:---|
 |sitepagepublishing|
 |group|
 |sts|
+|unknownFutureValue|
+
+### kind values
+
+|Member|
+|:---|
+|unrestricted|
+|allowedTenants|
 |unknownFutureValue|

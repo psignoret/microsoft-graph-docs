@@ -175,6 +175,7 @@ Content-type: application/json
 ### Example 2: Create a new application and add a password secret
 
 #### Request
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -272,6 +273,71 @@ Content-type: application/json
 }
 ```
 
+### Example 3: Create a new multi-tenant application limited to only some tenants
+
+The following example creates a multi-tenant application that can only be used in the tenant where the application is created and two other Entra .tenants.
+
+#### Request
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_application_with_signinaudiencerestrictions"
+}-->
+```http
+POST https://graph.microsoft.com/beta/applications
+Content-type: application/json
+
+{
+  "displayName": "MyAppName",
+  "signInAudience": "AzureADMultipleOrgs",
+  "signInAudienceRestrictions": {
+    "@odata.type": "#microsoft.graph.allowedTenantsAudience",
+    "isHomeTenantAllowed": true,
+    "allowedTenantIds": [
+      "818ce016-78c2-457c-91d7-c02c2faaa5fe",
+      "c62670b0-53a1-4a38-b26c-4093cbaa510a"
+    ]
+  }
+}
+```
+
+---
+
+#### Response
+
+The following example shows the response.
+
+> **Note**: The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.application"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications/$entity",
+    "id": "83ab4737-da9d-4084-86f2-f8fbec220647",
+    "appId": "9519e58c-bd06-4120-a7fd-2220d4de8409",
+    "createdDateTime": "2025-11-01T19:10:02.6626202Z",
+    "displayName": "MyAppName",
+    "signInAudience": "AzureADMultipleOrgs",
+    "signInAudienceRestrictions": {
+      "@odata.type": "#microsoft.graph.allowedTenantsAudience",
+      "isHomeTenantAllowed": true,
+      "allowedTenantIds": [
+        "818ce016-78c2-457c-91d7-c02c2faaa5fe",
+        "c62670b0-53a1-4a38-b26c-4093cbaa510a"
+      ]
+    }
+}
+```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
@@ -285,6 +351,3 @@ Content-type: application/json
   ]
 }
 -->
-
-
-
